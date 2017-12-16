@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+.profile {
+	float: right;
+	position: relative;
+  	width: 40%;
+  	height: auto;
+  	border-radius: 50%;
+	margin: 20% 0%
+}
+
+.about-text {
+	margin: 20% 0%;
+	width: 60%;
+	vertical-align: middle;
+	position: relative;
+}
+
+#name {
+	font-size: 50px;
+}
+
+#details {
+	font-size: 20px;
+}
+
+.footer {
+	font-size: 12px;
+}
