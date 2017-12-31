@@ -49,8 +49,9 @@
    								<h3 class="card-title">Halcyon Stats</h3>
 								<p class="card-subtitle mb-2 text-muted">Website to view stats in Vainglory.</p>
     							<p class="card-text">
-									A personal project where I scraped data using the new Vainglory API. With this website, a user can view any player's overall and per game stats. I used this opportunity to learn more about REST and to build something for a game that I enjoy playing.
-									<a href="https://github.com/tsekylekobie/halcyon-stats" target="_blank">View code</a>
+									<button type="button" class="btn btn-lg btn-outline-info" data-toggle="modal" data-target="#halcyon">
+  										See more
+									</button>
 								</p>
   							</div>
 							<div class="card-footer">
@@ -59,18 +60,53 @@
 								<span class="badge badge-pill badge-dark">Ruby on Rails</span>
 								<span class="badge badge-pill badge-dark">Bootstrap</span>
 							</div>
+							<div class="modal fade" id="halcyon" tabindex="-1" role="dialog" aria-labelledby="halcyonTitle" aria-hidden="true">
+								<div class="modal-dialog-centered proj-modal" role="document">
+							    	<div class="modal-content">
+							      		<div class="modal-header">
+							        		<h5 class="modal-title" id="halcyonTitle">Halcyon Stats</h5>
+							        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          			<span aria-hidden="true">&times;</span>
+							        		</button>
+							      		</div>
+							      		<div class="modal-body">
+							      			A personal project where I scraped data using the new Vainglory API. With this website, a user can view any player's overall and per game stats. I used this opportunity to learn more about REST and to build something for a game that I enjoy playing.
+							      		</div>
+							      		<div class="modal-footer">
+							        		<a href="https://github.com/tsekylekobie/halcyon-stats" class="btn btn-primary" role="button" target="_blank">View code</a>
+							      		</div>
+							    	</div>
+								</div>
+							</div>
 						</div>
 						<div class="card">	
 							<div class="card-body">
    								<h3 class="card-title">Database</h3>
 								<p class="card-subtitle mb-2 text-muted">Small query database similar to SQL</p>
-    							<p class="card-text">
-									A class project for CS61B (Data Structures). With this, we were required to design a small relational database management system from scratch.
-									<a href="http://datastructur.es/sp17/materials/proj/proj2/proj2.html" target="_blank">View specs</a>
-								</p>
+								<button type="button" class="btn btn-lg btn-outline-info" data-toggle="modal" data-target="#database">
+  										See more
+								</button>
 							</div>
 							<div class="card-footer">
 								<span class="badge badge-pill badge-light">Java</span>
+							</div>
+							<div class="modal fade" id="database" tabindex="-1" role="dialog" aria-labelledby="databaseTitle" aria-hidden="true">
+								<div class="modal-dialog-centered proj-modal" role="document">
+							    	<div class="modal-content">
+							      		<div class="modal-header">
+							        		<h5 class="modal-title" id="databaseTitle">Database</h5>
+							        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          			<span aria-hidden="true">&times;</span>
+							        		</button>
+							      		</div>
+							      		<div class="modal-body">
+							      			A class project for CS61B (Data Structures). With this, we were required to design a small relational database management system from scratch.
+							      		</div>
+							      		<div class="modal-footer">
+							        		<a href="http://datastructur.es/sp17/materials/proj/proj2/proj2.html" class="btn btn-primary" role="button" target="_blank">View specs</a>
+							      		</div>
+							    	</div>
+								</div>
 							</div>
   						</div>
 					</div>

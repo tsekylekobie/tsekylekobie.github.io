@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 body {
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-family: Roboto, Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
 	background-color: #fff;
 }
 
@@ -70,4 +70,19 @@ body {
 	margin: 5px;
 	color: black;
 	font-size: 12px;
+}
+
+.badge-light {
+	background-color: white;
+}
+
+.proj-modal {
+	width: 50vw;
+	height: auto;
+	max-height:40vh;
+	margin-left: 25vw;
+}
+
+.modal-backdrop {
+    opacity:0.3 !important;
 }
