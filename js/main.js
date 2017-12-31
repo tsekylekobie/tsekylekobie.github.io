@@ -1,3 +1,4 @@
+//Smooth scrolling
 $(document).on('click', 'a[href^="#"]', function (event) {
     "use strict";
 	event.preventDefault();
