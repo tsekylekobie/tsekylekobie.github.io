@@ -1,17 +1,20 @@
 @charset "UTF-8";
 /* CSS Document */
+:root {
+	--theme-color: #1469F6;
+}
+
 body {
-	font-family: Roboto, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-	background-color: #03A6E5;
+	font-family: Roboto, PT Sans, Helvetica Neue;
+	background-color: #fff;
 }
 
 #big-container {
 	position: relative;
-	margin: 0vh 10vw;
-	width: 80vw;
+	margin: 0vh 5vw;
+	width: 90vw;
 	min-height: 100vh;
 	padding: 0px;
-	background-color: #fff;
 }
 
 #body {
@@ -22,32 +25,34 @@ body {
 
 .section {
 	height: auto;
-	min-height: 200px;
+	min-height: 300px;
 }
 
 .column {
 	float: right;
-	background-color: #f65314;
-	height: 600px;
-	width: 125px;
+	background-color: var(--theme-color);
+	position: relative;
+	height: 200%;
+	min-height: 300px;
+	width: 25px;
 }
 
 .circle {
-	background-color: #f65314;
-	margin-top: 150px;
+	background-color: var(--theme-color);
+	margin-top: 5vh;
 	margin-left: -87.5px;
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 }
 
 .icon {
-	position: relative;
-	float: right;
-	margin-top: 5vh;
-	width: 250px;
-	height: 250px;
-  	border-radius: 50%;
+	margin-top: 25%;
+	margin-left: 17.5%;
+	align-self: center;
+	height: 50%;
+	width: 65%;
+	opacity: 0.9
 }
 
 .content {
@@ -55,12 +60,13 @@ body {
 	position: relative;
 	margin-top: 5vh;
 	font-size: 16px;
+	width: 80%;
 }
 
 #sidebar {
 	position: fixed;
 	top: 5vh;
-	left: 75%;
+	left: 80%;
 	height: 100vh;
 	font-size: 12px;
 }
@@ -72,9 +78,11 @@ body {
 
 .footer {
 	position: absolute;
-	width: 100%;
+	width: 100vw;
 	bottom: 0;
 	text-align: center;
+	z-index: 1;
+	background-color: #D9D9D9;
 }
 
 .badge-light {
@@ -90,4 +98,8 @@ body {
 
 .modal-backdrop {
     opacity: 0.3 !important;
+}
+
+h1 {
+	color: var(--theme-color);
 }
