@@ -1,14 +1,17 @@
 @charset "UTF-8";
 /* CSS Document */
 body {
-	font-family: Roboto, Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
-	background-color: #fff;
+	font-family: Roboto, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	background-color: #03A6E5;
 }
 
 #big-container {
+	position: relative;
 	margin: 0vh 10vw;
 	width: 80vw;
+	min-height: 100vh;
 	padding: 0px;
+	background-color: #fff;
 }
 
 #body {
@@ -62,10 +65,16 @@ body {
 	font-size: 12px;
 }
 
-#sidebar a, #footer {
-	margin: 5px;
+#sidebar a, .footer {
 	color: black;
 	font-size: 12px;
+}
+
+.footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
 }
 
 .badge-light {
@@ -80,5 +89,5 @@ body {
 }
 
 .modal-backdrop {
-    opacity:0.3 !important;
+    opacity: 0.3 !important;
 }

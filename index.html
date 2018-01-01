@@ -9,12 +9,14 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<!-- Custom CSS -->
 <link href="css/main.css" rel="stylesheet">
+<link href="css/buttons.css" rel="stylesheet">
 
 </head>
 <body>
 	
-	<div class="container" id="big-container">
+	<div id="big-container">
 		<div class="container" id="body">
 			<div class="container" id="sidebar">
 				<i>+Shortcuts</i><br>
@@ -48,11 +50,9 @@
 							<div class="card-body">
    								<h3 class="card-title">Halcyon Stats</h3>
 								<p class="card-subtitle mb-2 text-muted">Website to view stats in Vainglory.</p>
-    							<p class="card-text">
-									<button type="button" class="btn btn-lg btn-outline-info" data-toggle="modal" data-target="#halcyon">
-  										See more
-									</button>
-								</p>
+								<button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#halcyon">
+  									More info &rarr;
+								</button>
   							</div>
 							<div class="card-footer">
 								<span class="badge badge-pill badge-light">Ruby</span>
@@ -70,10 +70,13 @@
 							        		</button>
 							      		</div>
 							      		<div class="modal-body">
-							      			A personal project where I scraped data using the new Vainglory API. With this website, a user can view any player's overall and per game stats. I used this opportunity to learn more about REST and to build something for a game that I enjoy playing.
+							      			<ul>
+												<li>A personal project where I scraped data using the new Vainglory API. I used this opportunity to learn more about REST and to build something for a game that I enjoy playing.</li>
+												<li>With this website, a user can view any player's overall and per game stats.</li>
+											</ul>
 							      		</div>
 							      		<div class="modal-footer">
-							        		<a href="https://github.com/tsekylekobie/halcyon-stats" class="btn btn-primary" role="button" target="_blank">View code</a>
+							        		<a href="https://github.com/tsekylekobie/halcyon-stats" class="btn btn-sm btn-primary" role="button" target="_blank">View code</a>
 							      		</div>
 							    	</div>
 								</div>
@@ -83,8 +86,8 @@
 							<div class="card-body">
    								<h3 class="card-title">Database</h3>
 								<p class="card-subtitle mb-2 text-muted">Small query database similar to SQL</p>
-								<button type="button" class="btn btn-lg btn-outline-info" data-toggle="modal" data-target="#database">
-  										See more
+								<button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#database">
+  									More info &rarr;
 								</button>
 							</div>
 							<div class="card-footer">
@@ -100,10 +103,13 @@
 							        		</button>
 							      		</div>
 							      		<div class="modal-body">
-							      			A class project for CS61B (Data Structures). With this, we were required to design a small relational database management system from scratch.
+							      			<ul>
+												<li>A class project for CS61B (Data Structures). With this, we were required to design a small relational database management system from scratch.</li>
+												<li>Some features that I implemented include table creation, row parsing, and 'select' operations.</li>
+											</ul>
 							      		</div>
 							      		<div class="modal-footer">
-							        		<a href="http://datastructur.es/sp17/materials/proj/proj2/proj2.html" class="btn btn-primary" role="button" target="_blank">View specs</a>
+							        		<a href="http://datastructur.es/sp17/materials/proj/proj2/proj2.html" class="btn btn-sm btn-primary" role="button" target="_blank">View specs</a>
 							      		</div>
 							    	</div>
 								</div>
@@ -114,8 +120,8 @@
 			</div>
 		</div>
 		
-		<hr>
-		<div class="container" style="text-align: center; margin: 10px;" id="footer">
+		<div class="footer">
+			<hr>
 			Last updated December 2017
 		</div>
 	</div>
