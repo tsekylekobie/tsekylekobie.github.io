@@ -8,8 +8,11 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     }, 500);
 });
 
-//Include project cards
+//Load project section
 $(function() {
 	"use strict";
-	$("#proj-cards").load("projects.html");
+	$(".proj-tab").click(function() {
+		$("#proj-display").hide().load("projects.html #" + $(this).attr("id")).fadeIn("500");
+	});
+	$("#proj-display").load("projects.html #halcyon");
 });
