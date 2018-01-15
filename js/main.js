@@ -12,7 +12,12 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 $(function() {
 	"use strict";
 	$(".proj-tab").click(function() {
-		$("#proj-display").hide().load("projects.html #" + $(this).attr("id")).fadeIn("500");
+		var project = $(this).attr("id");
+		$(".card").fadeOut(500);
+		$("#" + project + "-card").fadeIn(500);
+		
+		$(".proj-tab.active").removeClass("active");
+		$(this).addClass("active");
 	});
-	$("#proj-display").load("projects.html #halcyon");
+	
 });
