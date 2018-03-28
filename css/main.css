@@ -1,129 +1,66 @@
 @charset "UTF-8";
 /* CSS Document */
 :root {
-	--theme-color: #1469F6;
+	--theme-color: #478ADF;
 }
 
 body {
-	font-family: Roboto, PT Sans, Helvetica Neue;
-	background-color: #F0F0F0;
+	font-family: PT Sans, Roboto, Helvetica Neue;
+	background-color: white;
+	font-size: 25px;
+	color: #606c76;
 }
 
-h1 {
+#title {
 	color: var(--theme-color);
+	font-size: 100px;
+}
+
+a {
+	color: #606c76;
 }
 
 #big-container {
-	position: relative;
-	margin: 0vh 5vw;
-	width: 90vw;
-	padding: 0px;
-}
-
-#body {
-	position: relative;
-	width: 100%;
-	margin: 0px;
-	padding-top: 30px;
-}
-
-.section {
-	height: auto;
-	width: 100%;
-	margin-bottom: 10px;
-}
-
-#sidebar {
-	position: fixed;
-	left: 80%;
-	height: 100vh;
-	font-size: 12px;
-}
-
-#sidebar a, .footer {
-	color: black;
-	font-size: 12px;
-}
-
-.footer {
-	width: 100vw;
-	text-align: center;
-}
-
-.content {
-	vertical-align: middle;
-	position: relative;
-	font-size: 16px;
-	width: 80%;
-}
-
-.badge-light {
-	background-color: var(--theme-color);
-	color: white;
-}
-
-.proj-modal {
-	width: 50vw;
-	height: auto;
-	max-height:40vh;
-	margin-left: 25vw;
-}
-
-.modal-backdrop {
-    opacity: 0.3 !important;
-}
-
-.proj-tabs-vertical {
-	width: 20%;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-direction: column;
-	float: left;
+	width: 100vw;
+	height: 100vh;
 }
 
-.proj-tab {
-	width: 100%;
-	min-height: 50px;
-	background-color: white;
-	border: 2px solid rgba(0,0,0,.125);
+#container {
+	position: relative;
+	top: auto;
+	display: inline-block;
 	text-align: center;
-	padding: 15px;
-	border-radius: 5px;
+}
+
+#title {
+	margin: auto;
+}
+
+#links {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.link {
+	color: #afb5ba;
+}
+
+.link:hover {
+	color: #606c76;
 	cursor: pointer;
 }
 
-.proj-tab.active {
-	background-color: #B9B9B9;
+.clicked {
+	color: #606c76;
 }
 
-#proj-display { 
-	width: 80%;
-	float: right;
-}
-
-.proj-link {
-	float: right;
-}
-
-.carousel-indicators li {
-	background-color: darkgray;
-	border-radius: 50%;
-	width: 12px;
-	height: 12px;
-	margin: 1px;
-}
-
-.carousel-indicators .active {
-	background-color: dimgray;
-	border-radius: 50%;
-	width: 12px;
-	height: 12px;
-	margin: 1px;
-}
-
-.card {
+.display {
 	display: none;
-}
-
-.card.active {
-	width: 100%;
+	text-align: left;
+	height: 100px;
 }
